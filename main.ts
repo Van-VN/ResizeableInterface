@@ -9,11 +9,10 @@ array.push(new Rectangle(12, 14, "Rect 1"));
 array.push(new Square("Square 1", 20));
 
 array.forEach((item) => {
+  let i = Math.round(Math.random() * 100);
   console.log("Trước thay đổi: ");
   console.log(item);
-  let i = 5;
   item.resize(i);
-  i++;
   console.log("Sau thay đổi: ");
   console.log(item);
 });
